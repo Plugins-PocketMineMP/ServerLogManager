@@ -1,0 +1,15 @@
+log-clear-period: 3 # TODO
+lang: eng
+
+## List of supported timezones: https://www.php.net/manual/en/timezones.php
+timezone: America/Los_Angeles
+
+max-log-count-per-page: 50
+
+settings:
+  notice-op:
+    command: false
+    sign: true
+  notice-console:
+    command: true
+    sign: true

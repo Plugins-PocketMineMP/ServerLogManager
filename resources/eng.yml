@@ -1,0 +1,112 @@
+prefix: §b§l[Log] §r§7
+
+date-format: "m/d/Y H/i/s"
+place: place
+break: break
+sign: SignPost input
+chat: chat
+command: command
+
+commands:
+  log: log
+  description: Log command
+
+command-log: CommandLog
+sign-log: SignLog
+
+message:
+  block-log: "The result of log inquiry of {pos} coordinates."
+  block-log-format: "{type} by {issuer} on {date}"
+  block-log-enabled: Block log mode is enabled.
+  block-log-disabled: Block log mode is disabled.
+
+form:
+  main:
+    title: Log UI
+    content: Select the log.
+    command: Command log
+    chat: Chat log
+    block: Block log
+  searchForm:
+    title: Check log
+    dropdown: Please select the log of the date you want to check.
+    input: If you want to find the log of a specific player, enter the player's name in this field.
+  searchResult:
+    byPlayer:
+      title: "This is the {date} {type} log result from {player}."
+      exit: exit
+      return: return to main
+      nextPage: "Go to next page ({now}/{max})"
+    normal:
+      title: "Result of {type} log of {date} year."
+      exit: exit
+      return: return to main
+      nextPage: "Go to next page ({now}/{max})"
+#prefix: §b§l[Log] §r§7
+#
+#date-format: "m/d/Y H/i/s"
+#place: place
+#break: break
+#sign: SignPost input
+#chat: chat
+#command: command
+#
+#commands:
+#  log: log
+#  description: Log command
+#
+#comand-log: CommandLog
+#sign-log: SignLog
+#
+#message:
+#  block-log: "The result of log inquiry of {pos} coordinates."
+#  block-log-format: "{type} by {issuer} on {date}"
+#  block-log-enabled: Block log mode is enabled.
+#  block-log-disabled: Block log mode is disabled.
+#
+#form:
+#  main:
+#    title: Log UI
+#    content: Select the log.
+#    command: Command log
+#    chat: Chat log
+#    block: Block log
+#  searchForm:
+#    title: Check log
+#    dropdown: Please select the log of the date you want to check.
+#    input: If you want to find the log of a specific player, enter the player's name in this field.
+#  searchResult:
+#    byPlayer:
+#      title: "This is the {date} {type} log result from {player}."
+#      exit: exit
+#      return: return to main
+#      nextPage: "Go to next page ({now}/{max})"
+#    normal:
+#      title: "Result of {type} log of {date} year."
+#      exit: exit
+#      return: return to main
+#      nextPage: "Go to next page ({now}/{max})"
+#
+#  #searchResult:
+#  #    byPlayer:
+#  #      title: "This is the {date} {type} log result from {player}."
+#  #      exit: exit
+#  #      return: return to main
+#  #      nextPage: "Go to next page ({now}/{max})"
+#  #    normal:
+#  #      title: "Result of {type} log of {date} year."
+#  #      exit: exit
+#  #      return: return to main
+#  #      nextPage: "Go to next page ({now}/{max})"
+#
+#  #searchResult:
+#  #    byPlayer:
+#  #      title: "This is the {date} {type} log result from {player}."
+#  #      exit: exit
+#  #      return: return to main
+#  #      nextPage: "Go to next page ({now}/{max})"
+#  #    normal:
+#  #      title: "Result of {type} log of {date} year."
+#  #      exit: exit
+#  #      return: return to main
+#  #      nextPage: "Go to next page ({now}/{max})"

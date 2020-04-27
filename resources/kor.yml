@@ -1,0 +1,44 @@
+prefix: §b§l[알림] §r§7
+
+date-format: "Y년 m월 d일 H시 i분 s초"
+place: 설치
+break: 파괴
+sign: 표지판 입력
+chat: 채팅
+command: 명령어
+
+commands:
+  log: 로그
+  description: 로그 UI를 확인합니다.
+
+command-log: 명령어로그
+sign-log: 표지판로그
+
+message:
+  block-log: "{pos}위치의 블럭 로그 조회 결과입니다."
+  block-log-format: "{date}에 {issuer}님이 {type}"
+  block-log-enabled: 블럭 로그가 활성화 되었습니다.
+  block-log-disabled: 블럭 로그가 비활성화 되었습니다.
+
+form:
+  main:
+    title: 로그 UI
+    content: 확인하실 로그를 선택해주세요.
+    command: 명령어 로그 확인하기
+    chat: 채팅 로그 확인하기
+    block: 블럭 로그 확인하기
+  searchForm:
+    title: 로그 확인
+    dropdown: 확인하고 싶은 날짜의 로그를 선택해주세요.
+    input: 만약 특정 플레이어의 로그를 찾고 싶다면 이 항목에 플레이어의 이름을 입력해주세요.
+  searchResult:
+    byPlayer:
+      title: "{player}님의 {date} {type}로그 결과입니다."
+      exit: 나가기
+      return: 메인으로 돌아가기
+      nextPage: "다음 페이지로 넘어가기 ({now}/{max})"
+    normal:
+      title: "{date} {type}로그 결과입니다."
+      exit: 나가기
+      return: 메인으로 돌아가기
+      nextPage: "다음 페이지로 넘어가기 ({now}/{max})"
