@@ -1,5 +1,5 @@
 # ServerLogMaster
-A PocketMine-MP Plugin | ServerLogMaster
+A PocketMine-MP Plugin | ServerLogManager
 
 ## Usage
 |command|description|permission|
