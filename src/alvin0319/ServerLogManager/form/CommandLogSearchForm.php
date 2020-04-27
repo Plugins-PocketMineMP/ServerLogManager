@@ -46,7 +46,7 @@ class CommandLogSearchForm implements Form{
 					}else{
 						$results = [];
 						foreach($logData as  $datum){
-							$results[] = $datum["date"] . ": " . $datum["command"];
+							$results[] = $datum["date"] . " " . $datum["issuer"] . ":" . $datum["command"];
 						}
 						$player->sendForm(new SearchResultForm($results, date("Y-m-d"), "command"));
 					}
@@ -63,7 +63,7 @@ class CommandLogSearchForm implements Form{
 					}else{
 						$results = [];
 						foreach($logData as  $datum){
-							$results[] = $datum["date"] . ": " . $datum["command"];
+							$results[] = $datum["date"] . " " . $datum["issuer"] . ":" . $datum["command"];
 						}
 						$player->sendForm(new SearchResultForm($results, explode(".", $this->logs[$data[0]])[0], "command"));
 					}
