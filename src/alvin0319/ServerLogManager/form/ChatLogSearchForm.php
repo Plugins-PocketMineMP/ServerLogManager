@@ -38,7 +38,7 @@ class ChatLogSearchForm implements Form{
 					if(trim($data[1] ?? "") !== ""){
 						$results = [];
 						foreach($logData as $datum){
-							if($datum["issuer"] === $data[1]){
+							if($datum["issuer"] === strtolower($data[1])){
 								$results[] = $datum["date"] . ": " . $datum["message"];
 							}
 						}
@@ -55,7 +55,7 @@ class ChatLogSearchForm implements Form{
 					if(trim($datum[1] ?? "") !== ""){
 						$results = [];
 						foreach($logData as $datum){
-							if($datum["issuer"] === $data[1]){
+							if($datum["issuer"] === strtolower($data[1])){
 								$results[] = $datum["date"] . ": " . $datum["message"];
 							}
 						}

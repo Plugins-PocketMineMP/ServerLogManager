@@ -115,13 +115,13 @@ class ServerLogManager extends PluginBase implements Listener{
 				}, array_keys($tile->getText()), $tile->getText()));
 			}
 		}
-		$this->blockLogTemp[$posString][] = ["date" => date($this->lang->getNested("date-format", "Y-m-d H:i:s")), "issuer" => $player->getName(), "extraData" => $extraData, "type" => $type];
+		$this->blockLogTemp[$posString][] = ["date" => date($this->lang->getNested("date-format", "Y-m-d H:i:s")), "issuer" => $player->getLowerCaseName(), "extraData" => $extraData, "type" => $type];
 	}
 
 	public function chatLog(Player $player, string $message) : void{
 		//$str = "[" . date($this->lang->getNested("date-format", "Y-m-d H:i:s")) . "] " . $player->getName() . ": " . $message;
 		$this->chatLogDB[] = [
-			"issuer" => $player->getName(),
+			"issuer" => $player->getLowerCaseName(),
 			"message" => $message,
 			"date" => date($this->lang->getNested("date-format", "Y-m-d H:i:s"))
 		];
@@ -130,7 +130,7 @@ class ServerLogManager extends PluginBase implements Listener{
 	public function commandLog(Player $player, string $message) : void{
 		//$str = "[" . date($this->lang->getNested("date-format", "Y-m-d H:i:s")) . "] " . $player->getName() . ": " . $message;
 		$this->commandLogDB[] = [
-			"issuer" => $player->getName(),
+			"issuer" => $player->getLowerCaseName(),
 			"command" => $message,
 			"date" => date($this->lang->getNested("date-format", "Y-m-d H:i:s"))
 		];
